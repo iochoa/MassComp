@@ -1831,8 +1831,8 @@ int main(int argc,char* argv[])
 		//std::string path_decompress = "decmp.mzxml";
 		doc.SaveFile(output_path.c_str());
 		fclose(fpR);
-		//std::string command_rm = "rm pairsCompressed.bin struct.xml "+input_path;
-		//system(command_rm.c_str());
+		std::string command_rm = "rm pairsCompressed.bin struct.xml";
+		system(command_rm.c_str());
 	}
 
 	else if(operations=="-cmp")
